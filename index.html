@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water Utility Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+    <header>
+        <div class="logo">Water Utility</div>
+        <nav>
+            <ul>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">Reports</a></li>
+                <li><a href="#">Analytics</a></li>
+                <li><a href="#">Settings</a></li>
+                <li><a href="#">Help</a></li>
+            </ul>
+        </nav>
+        <div class="profile-icon">User</div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Water Production Monitoring</h1>
+            <p>Tracking water usage and production in real-time.</p>
+            <div class="date-range">
+                <label for="date">Select Date Range:</label>
+                <select id="date">
+                    <option value="daily">Daily</option>
+                    <option value="weekly">Weekly</option>
+                    <option value="monthly">Monthly</option>
+                    <option value="yearly">Yearly</option>
+                </select>
+            </div>
+        </section>
+
+        <section class="kpis">
+            <div class="kpi-card">
+                <h2>Reclaimed Water</h2>
+                <p>1,500 Acre-feet</p>
+                <span class="change">+5% ↑</span>
+            </div>
+            <div class="kpi-card">
+                <h2>Groundwater</h2>
+                <p>800 Acre-feet</p>
+                <span class="change">-2% ↓</span>
+            </div>
+            <div class="kpi-card">
+                <h2>CAP Water</h2>
+                <p>900 Acre-feet</p>
+                <span class="change">+8% ↑</span>
+            </div>
+        </section>
+
+        <section class="charts">
+            <div class="chart-container">
+                <h3>Reclaimed Water Production</h3>
+                <canvas id="reclaimedWaterChart"></canvas>
+            </div>
+            <div class="chart-container">
+                <h3>Groundwater Extraction Levels</h3>
+                <canvas id="groundwaterChart"></canvas>
+            </div>
+            <div class="chart-container">
+                <h3>CAP Water Supply and Usage</h3>
+                <canvas id="capWaterChart"></canvas>
+            </div>
+        </section>
+
+        <section class="pie-chart">
+            <h3>Water Source Distribution</h3>
+            <canvas id="waterDistributionPieChart"></canvas>
+        </section>
+
+        <section class="reports">
+            <h3>Recent Reports and Analytics</h3>
+            <table>
+                <tr>
+                    <th>Report Name</th>
+                    <th>Date</th>
+                    <th>Type</th>
+                    <th>Status</th>
+                </tr>
+                <tr>
+                    <td>Groundwater Report - Aug</td>
+                    <td>Aug 2024</td>
+                    <td>Production</td>
+                    <td>Complete</td>
+                </tr>
+                <tr>
+                    <td>Reclaimed Water Analysis</td>
+                    <td>Sep 2024</td>
+                    <td>Quality</td>
+                    <td>Pending</td>
+                </tr>
+                <tr>
+                    <td>CAP Water Supply Review</td>
+                    <td>Sep 2024</td>
+                    <td>Production</td>
+                    <td>Complete</td>
+                </tr>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <div>© 2024 Water Utility Company</div>
+        <div>
+            <a href="#">Contact</a> | 
+            <a href="#">Privacy Policy</a> | 
+            <a href="#">Terms of Use</a>
+        </div>
+        <div class="social">
+            <a href="#">LinkedIn</a> |
+            <a href="#">Twitter</a> |
+            <a href="#">Facebook</a>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
