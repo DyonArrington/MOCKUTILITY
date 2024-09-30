@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #007BFF;
+    color: white;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.profile-icon {
+    background-color: white;
+    color: #007BFF;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.hero {
+    text-align: center;
+    padding: 50px;
+    background-color: #e8f7ff;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.date-range select {
+    padding: 10px;
+}
+
+.kpis {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #ffffff;
+    margin: 20px 0;
+}
+
+.kpi-card {
+    text-align: center;
+    background-color: #e9f1ff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 30%;
+}
+
+.kpi-card h2 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.kpi-card p {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.kpi-card .change {
+    font-size: 14px;
+    color: green;
+}
+
+.charts {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+.chart-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 45%;
+}
+
+.pie-chart, .reports {
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #007BFF;
+    color: white;
+    margin-top: 20px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer .social {
+    margin-top: 10px;
+}
